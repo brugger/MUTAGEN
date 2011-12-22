@@ -1,0 +1,15 @@
+<CENTER><h1>Welcome to the Sulfolobus Database</h1><CENTER>
+
+<p>
+This database contains the three sequenced <I>Sulfolobus</I> genomes.
+The database is still being updated but if you have any questions
+about usage or bugs please email: <A href='mailto:dbs@dac.molbio.ku.dk'>dbs@dac.molbio.ku.dk</A>
+
+<p> The database have now been updated so it now includes the
+sequenced extrachromosomal elements belonging to the
+<I>Sulfolobales</I>. Since this is a major update some bugs might have
+been created, so please report these if you find them.
+
+<P> 
+This system is powered by <A HREF='http://dac.molbio.ku.dk/bioinformatics/MUTAGEN/index.html'>MUTAGEN v4</a> a free database system, usable for both annoation and genome mining/comparison.
+

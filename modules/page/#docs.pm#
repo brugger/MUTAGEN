@@ -1,0 +1,90 @@
+#!/usr/bin/perl -wT
+# 
+# 
+# 
+# 
+# Kim Brugger (Dec 2003), contact: brugger@mermaid.molbio.ku.dk
+
+use strict;
+
+package page::docs;
+require Exporter;
+require AutoLoader;
+
+# set the version for version checking
+my $VERSION     = "0.01";
+
+my @ISA = qw(VERSION Exporter AutoLoader);
+
+our @EXPORT = qw();
+@ISA = qw(Exporter AutoLoader);
+@EXPORT = qw();
+
+#exported variables.
+use vars qw ();
+
+sub run {
+
+  my $html = "";
+
+  if (1 || $html::parameters{'FAQ'}) {
+    $html = FAQ();
+  }
+  else {
+    $html = "<CENTER><h1>Database Documentaion</h1></CENTER>\n";
+    $html .= &html::style::hr("70%");
+    $html .= &html::style::break();
+  }
+
+
+
+  return ($html, 1);
+}
+
+
+sub FAQ {
+  
+  
+  my $html = "<H2>The <I>Sulfolobus</I> database FAQ</h2>\n";
+
+  $html .= "<b>Q: What does -1 mean in the stop position?</b><br>\n";
+  $html .= "<b>A:</b> Since the length of sequences in the database varies a '-1' in the stop postion corresponds to the end of the selected sequence.<br>\n";
+
+
+  $html .= "<br><b>Q: Why are some genes boxed and others not?</b><br>\n";
+  $html .= "<b>A:</b> Boxed genes either originate from the GenBank
+  file and have the original annotation or have been annotated after
+  the genome publication. The unboxed genes have been perdicted as
+  coding but no tverified and are not annotated.<br>\n";
+
+  $html .= "<br><b>Q: How do I make corrections to the database?</b><br>\n"; 
+  $html .= "<b>A:</b> Either you acquire an account. These are only
+  for researchers that want to add or correct annotations them
+  self. Otherwise please contact us with the information and we will
+  make the alterations for you. In both cases please contact: <a
+  href='mailto:dbs\@dac.molbio.ku.dk'>dbs\@dac.molbio.ku.dk</a>.<br>\n";
+
+  $html .= "<br><b>Q: Will my additions to the database  delete old annotation ?</b><br>\n"; 
+  $html .= "<b>A:</b> No, the new information will be shown along with
+  the previous ones sorted by date. The name of the person that made
+  the correction, or asked for the correction to be made, will be
+  visible for each alteration. <br>\n";
+
+
+
+  return $html;
+
+}
+
+
+BEGIN {
+
+}
+
+END {
+
+}
+
+1;
+
+

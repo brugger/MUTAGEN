@@ -1,0 +1,19 @@
+Things to fix in mutagen 4 (going gamma).
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Check that the admin part is really working properly. (seems fine now.)
+
+
+Things to add in mutagen 4 (going gamma).
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Automatic update of databases, run every month.
+This should be done with an "at" script.
+
+Lods of stuff, just add as you get along.
+
+A sequence entry can consist of multiple sequences.
+
+Check that Klumpen works with MUTAGEN. (much later)
+
+Reimplement the transfer of annotations between two versions.

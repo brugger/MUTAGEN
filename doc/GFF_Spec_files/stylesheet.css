@@ -1,0 +1,331 @@
+body { 
+  font-family : Arial, Helvetica, sans-serif;
+  font-size : 10pt;
+  color : #000000;
+  margin-left : 10pt;
+  margin-right : 10pt;
+  margin-top : 10pt;
+  margin-bottom : 10pt;
+  text-decoration: none;
+  background-color: #FFFFFF;
+}
+
+p, ul, ol, div, li, dd, dt, dl {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size : 10pt;
+  color: #000000;
+}
+
+td {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size : 10pt;
+  color: #000000;
+  border: none;
+}
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5, h6, .h6, .barial, .barialw, .barialr, .barialb, .barialb2, .barialg, .small, .barhead, .barhead2, .barhead3, .chromtab1, .chromtab2, .chromtab3, .newsheader, .newsdate, .linksheader, .basecounter, .figlegend {
+  font-family: arial, sans-serif, helvetica;
+  font-weight: bold;
+}
+
+tt, .tt {
+  font-family: courier;
+  font-size: 10pt;
+}
+
+.chromtab1, .chromtab2 {
+  font-size: 8pt;
+  text-decoration: none;
+}
+
+.chromtab3 {
+  font-size: 7pt;
+}
+
+.ismarial {
+  font-style: italic;
+}
+
+.bsmarialw, .bsmarial {
+  font-weight: bold;
+}
+
+/* Sanger Homepage Styles - Start */
+
+.newsheader {
+  font-size: 8pt;
+}
+
+.newsdate {
+  font-size: 10pt;
+}
+
+.newsmore {
+  font-family: arial, sans-serif, helvetica;
+  font-size: 10pt;
+}
+
+.newstext {
+  font-family: arial, sans-serif, helvetica;
+  font-size: 8pt;
+}
+
+.linksheader {
+  font-family: arial, sans-serif, helvetica;
+  font-size: 10pt;
+}
+
+.linkstext {
+  font-family: arial, sans-serif, helvetica;
+  font-size: 8pt;
+}
+
+.basecounter {
+  font-family: arial, sans-serif, helvetica;
+  font-size: 10pt;
+}
+
+/* Sanger Homepage Styles - end */
+
+.barialw, .barial, .arial, .barialr, .barialg, .arialr, .arialb, .figlegend {
+  font-size: 10pt;
+}
+
+.smarial, .smarialr, .ismarial, .smarialw, .bsmarialw, .bsmarial {
+  font-size: 8pt;
+}
+
+.blue1, .chromtab2, .chromtab3, .barialb, .arialb, .barhead3 {
+  color: #000070;
+}
+
+.blue2, .barialb2, .barhead2 {
+  color: #5a85d6;
+}
+
+.green1 {
+  color: #32CD32;
+}
+
+.green2, .barialg {
+  color: #228B22;
+}
+
+.green3 {
+  color: #556B2F;
+}
+
+.greenbg1 {
+  background-color: #e8ffe2;
+}
+
+.greenbg2 {
+  background-color: #228B22;
+}
+
+.greenbg3 {
+  background-color: #556B2F;
+}
+
+.yellowbg1 {
+  background-color: #ffffe7;
+}
+
+.yellowbg2 {
+  background-color: #ffdf27;
+}
+
+.yellowbg3 {
+  background-color: #ffffcc;
+}
+
+.arial, .smarialr, .smarial, .arialb, .arialr, .ismarial, .smarialw, .bsmarialw {
+  font-family: arial, sans-serif, helvetica;
+}
+
+.red1, .barhead, .chromtab1, .barialr, .arialr, .smarialr, .newsheader, .basecounter, .figlegend {
+  color: #a00000;
+}
+
+.white, .barialw, .smarialw, .bsmarialw, .newsmore, .newsdate {
+  color: #ffffff;
+}
+
+.leftalign {
+  text-align: left;
+}
+
+h1, .h1 {
+  font-size: 22pt;
+}
+
+h2, .h2 {
+  font-size: 18pt;
+}
+
+h3, .h3 {
+  font-size: 16pt;
+}
+
+h4, .h4 {
+  font-size: 14pt;
+}
+
+h5, .h5 {
+  font-size: 12pt;
+}
+
+h6, .h6 {
+  font-size: 10pt;
+}
+
+a.nounderline {
+  text-decoration: none;
+}
+
+a.nounderline_blue2 {
+  text-decoration: none;
+  color: #5a85d6;
+}
+
+.small {
+  font-size: 10pt;
+}
+
+.vsmall {
+  font-size: 10pt;
+}
+
+.violet1, .navigator, .navigator1, .navigator3 {
+  background-color: #f5f5ff;
+  text-decoration: none;
+}
+
+.violet2, .panel {
+  background-color: #eeeeff;
+}
+
+.violet3, .navigator2 {
+  background-color: #e2e2ff;
+}
+
+.grey1, .gray1 {
+  background-color: #aaaaaa;
+}
+
+.grey2, .gray2 {
+  background-color: #d8d8d8;
+}
+
+.red1violet3 {
+  background-color: #e2e2ff;
+  color: #a00000;
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+.red1violet2 {
+  background-color: #eeeeff;
+  color: #a00000;
+  font-size: 10pt;
+}
+
+/* SangerWeb.pm - start */
+
+/* Virtual host stylesheets dependent on these styles are
+Sanger WWWdev
+Sanger WWW
+Sanger intweb
+Sanger library
+ACEdb  dev
+ACEdb  WWW
+*/
+
+.headerinactive {
+  font-family: arial, sans-serif, helvetica;
+  color: #000070;
+  font-size: 8pt;
+  text-decoration: none;
+}
+
+.headeractive {
+  font-family: arial, sans-serif, helvetica;
+  color: #a00000;
+  font-size: 8pt;
+  text-decoration: none;
+}
+
+/* these link and visited styles are not currently used
+a:link {
+  color: #000070;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #000070;
+  text-decoration: underline;
+}
+*/
+
+.headerbackground {
+  background-color: #f5f5ff;
+  text-decoration: none;
+}
+
+.footerbackground {
+  background-color: #f5f5ff;
+  text-decoration: none;
+}
+
+.headerfooterseparator {
+  background-color: #aaaaaa;
+}
+
+.navigatorseparator {
+  background-color: #aaaaaa;
+}
+
+/* SangerWeb.pm - end */
+
+/* Sanger banner - start */
+
+.h2bg, .barialwbg {
+  color: #ffffff;
+}
+
+.bannertext {
+  font-family: arial, sans-serif, helvetica;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18pt;
+} 
+
+tr.h2bg, .barialwbg, td.h2bg { background-color: #000070;
+}
+
+td.h2bg {
+  background-color: #000070;
+}
+
+/* Sanger banner - end */
+
+/* rounded boxes - start */
+
+.roundedboxedge {
+  background-color: #224422;
+  color: #ffffff;
+}
+
+.roundedboxbg {
+  background-color: #f5f5ff;
+}
+
+/* rounded boxes - end */
+
+
+
+.symbol {
+  font-family: symbol;
+  font-size : 10pt;
+  color: #000000;
+}

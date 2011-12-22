@@ -1,0 +1,101 @@
+MUTAGEN version 4.*
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Due to some bad design decisions in the first version of MUTAGEN,
+parts of the system are really bad and all major revisions of the code
+have only fixed some of the problems but not all, so this is the first
+real rewrite of *ALL* the code, so hopefully this time it will be done
+right.                                     
+                                               3/11 - 2003 Kim Brugger
+
+
+MODULES
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+The system relies on sharing several modules, each module might be
+divided into other sub-modules, but if two places share a part of code
+this will most likely be integrated into a module. During the design
+of the system, I have tried to build a stable and solid set of
+functions divided into several logical modules to ease further
+development. The "atomic" modules have been divided as such:
+
+html        -
+graphics    -
+db          -
+core        -
+
+Based on the functionality of these modules several other modules have
+been created.
+
+html::page
+
+
+
+DATABASE
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+The database have been restructured actually I do not think that there
+is not a single table that did not need altering, so it has been done,
+and so it will be. The interface to the database I have tried to
+conserve, but some of the functions have gotten new parameters to
+limit the amount of data that is transfered from the database.
+
+
+NEW FEATURES
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+All the blast reports can either be compressed or placed as normal
+files, but due to the shear volume this takes it is possible to
+compress them, an other possibility is to place them in the
+database. It is possible to compress them and then base64 encode them
+using MIME::base64, this will also ensure that report files are present.
+
+The database have also been extended, so it is now possible to use
+several gene-finders. This has been done to ensure that all the genes
+have been identified, and helps to identify the correct start codon
+for all genes.
+
+Comparative reports, it is possible to compare the genes found in a
+genome against other genomes, so it becomes possible to identify
+unique genes, and genes share between two or more organisms. These
+genes will be categorised according to the scheme used in COG. This
+allows to alter the categories if they where predicted wrongly by COG,
+and still be able to make the nice statistics and gene grouping.
+
+The common databases that all the installations can now be installed
+in a common place, making it possible to share these databases and
+thus use less disk space.
+
+This time it will also be possible to like external programs to the
+system, and the system will respond accordingly, so only if the
+program is installed will the system display the possibility the
+program provides. One of the programs that will be used are
+responsible for creating primers for PCR.
+
+Automatic update, the system page will be much more comprehensive
+allowing for the automatic update of the databases and automatic
+searches against new databases. It will also be possible to be
+notified by the system when a hit occurs against ones protein of
+interest.
+
+Continue sessions, if a user have been logged out automatically it is
+possible to continue the session again later.
+
+Users do not have to be logged in to the system for using it, this can
+of cause be altered so users have to login, but the main bar have the
+possibility for logging in or out the full time while showing as what
+person one is logged in as.
+
+Each installation have it own log, where errors are logged to, so the
+system does not clobber the apache log, and it is easier to debug if
+having several systems installed.
+
+Each sequence, and all the data belonging to it are protected by
+groups, so only users being members of a specific group are allowed to
+use specific sequences and all the data that belong to it.
+
+The colours used for displaying cluster information should be kept
+even after database updates. This should be done so if two clusters
+are joined into one, then the largest previous cluster will determine
+the colour.
+

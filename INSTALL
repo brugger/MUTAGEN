@@ -1,0 +1,33 @@
+ A short introduction how to install MUTAGEN.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+This document contain a short introduction about this system and how
+to install it on a linux box, it should be the same on other Unix
+systems.  Further questions can be addressed by writing to Kim Brügger
+(brugger@mermaid.molbio.ku.dk) or visit the official homepage:
+http://dac.molbio.ku.dk/bioinformatics/MUTAGEN/
+
+
+Requirements that the system relies on.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+perl
+a http server like apache
+MySql
+NCBI-BLAST
+t_coffee 
+
+
+furthermore several perl modules need to be installed (most of these
+come with the default perl installation):
+
+GD, CGI, DBI, Data, Digest, GD, HTTP, LWP, Net, POSIX, Socket.
+
+When these things are installed you can continue with the installation
+of the MUTAGEN system.
+
+Creating a database and a user that can connect to it
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+
+

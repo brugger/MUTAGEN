@@ -1,0 +1,26 @@
+html, body {
+	margin-top: 1px;
+	background-color: #719179;
+	font-size: small;
+	
+}
+
+
+img {
+	border:none;
+}
+
+.banner {
+	font-size: 1em;
+}
+
+.menu {
+	font-size: small;
+}
+
+.wiki {
+
+	font-size: normal;
+	background-color: #618169;
+
+}

@@ -1,0 +1,6 @@
+Options +ExecCGI
+
+Order deny,allow
+Deny from all
+Allow from all
+
